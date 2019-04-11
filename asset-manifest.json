@@ -1,11 +1,11 @@
 {
-  "main.js": "/MrRandol/randol-resume/static/js/main.5eef8a4a.chunk.js",
-  "main.js.map": "/MrRandol/randol-resume/static/js/main.5eef8a4a.chunk.js.map",
-  "runtime~main.js": "/MrRandol/randol-resume/static/js/runtime~main.faeb256a.js",
-  "runtime~main.js.map": "/MrRandol/randol-resume/static/js/runtime~main.faeb256a.js.map",
-  "static/js/2.9a24c84c.chunk.js": "/MrRandol/randol-resume/static/js/2.9a24c84c.chunk.js",
-  "static/js/2.9a24c84c.chunk.js.map": "/MrRandol/randol-resume/static/js/2.9a24c84c.chunk.js.map",
-  "index.html": "/MrRandol/randol-resume/index.html",
-  "precache-manifest.4d0c9c5276fd34627ea47bcd87119e10.js": "/MrRandol/randol-resume/precache-manifest.4d0c9c5276fd34627ea47bcd87119e10.js",
-  "service-worker.js": "/MrRandol/randol-resume/service-worker.js"
+  "main.js": "/randol-resume/static/js/main.5eef8a4a.chunk.js",
+  "main.js.map": "/randol-resume/static/js/main.5eef8a4a.chunk.js.map",
+  "runtime~main.js": "/randol-resume/static/js/runtime~main.ce70794b.js",
+  "runtime~main.js.map": "/randol-resume/static/js/runtime~main.ce70794b.js.map",
+  "static/js/2.9a24c84c.chunk.js": "/randol-resume/static/js/2.9a24c84c.chunk.js",
+  "static/js/2.9a24c84c.chunk.js.map": "/randol-resume/static/js/2.9a24c84c.chunk.js.map",
+  "index.html": "/randol-resume/index.html",
+  "precache-manifest.fa1857c3f8c3d8a37fe166774dc51b11.js": "/randol-resume/precache-manifest.fa1857c3f8c3d8a37fe166774dc51b11.js",
+  "service-worker.js": "/randol-resume/service-worker.js"
 }
