@@ -23,7 +23,7 @@ i18n
     fallbackLng: 'en',
     debug: true,
     backend: {
-       loadPath: '/resume/locales/{{lng}}/{{ns}}.json'
+       loadPath: process.env.PUBLIC_URL + '/locales/{{lng}}/{{ns}}.json'
     },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

@@ -12,43 +12,16 @@ const Header = ({color, categories, basicsLogo}) => {
   };
 
   return (
-    <div className={"right " + color.className} fixed={true} alignLinks="left">
-      {categories.map(category => {
-        var content = t(category)
-        if(category === "basics") {
-          content = <img src={basicsLogo} alt="navbar-avatar" className="navbar-avatar circle" />
-        }
-        return (
-          <div key={"head-" + uuidv4()}
-            href={"#" + (category !== "basics" ? category : "")}
-            className="valign-wrapper">
-              {content}
-          </div>
-        )
-      })}
+    <div>
+      <a className="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasExample">
+        Link with href
+      </a>
 
-        {i18n.language!=="fr" &&
-          <div
-            className="hoverable halfway-fab waves-effect waves-light circle language-button french"
-            onClick={() => changeLanguage('fr')} >
-              fr
-          </div>
-        }
-        {i18n.language!=="en" &&
-          <div
-            className="hoverable halfway-fab waves-effect waves-light circle language-button english"
-            onClick={() => changeLanguage('en')} >
-              en
-          </div>
-        }
-      </div>
+      <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button>
+    </div>
     );
-}
-
-Header.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.string).isRequired,
-  basicsLogo: PropTypes.string,
-
 }
 
 export default Header
