@@ -3,7 +3,7 @@ import { basicsPropType } from '../common/PropTypes'
 import { useTranslation } from 'react-i18next';
 
 const Home = ({ basics, color }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const {
     name,
     label,

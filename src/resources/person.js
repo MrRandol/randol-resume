@@ -2,7 +2,7 @@ export const person = {
   basics: {
     name: 'Maxime Choffat',
     label: 'software_engineer',
-    picture: './img/profile.png',
+    picture: process.env.PUBLIC_URL + '/img/profile.png',
     email: 'maxime.choffat@gmail.com',
     phone: '+33 6 33 56 36 25',
     summary: 'my_summary',

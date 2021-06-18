@@ -4,8 +4,7 @@ import { createStore } from 'redux'
 import reducers from './reducers'
 import Root from './components/Root'
 
-import './styles/main.css'
-import './styles/theme_default.css'
+import './styles/main.scss'
 
 import './i18n'
 

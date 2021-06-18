@@ -1,28 +1,22 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import { useTranslation } from 'react-i18next';
 const uuidv4 = require('uuid/v4');
 
-const Header = ({color, categories, basicsLogo}) => {
+
+const Menu = ({color, categories, basicsLogo}) => {
 
   const { t, i18n } = useTranslation();
 
+  // TODO : put in container
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
   return (
-    <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
-      <div className="offcanvas-header">
-        <h5 className="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
+      <div>
         {categories.map(category => {
           var content = t(category)
-          if(category === "basics") {
-            content = <img src={basicsLogo} alt="navbar-avatar" className="navbar-avatar circle" />
-          }
           return (
             <div key={"head-" + uuidv4()}
               href={"#" + (category !== "basics" ? category : "")}
@@ -46,15 +40,8 @@ const Header = ({color, categories, basicsLogo}) => {
                 en
             </div>
           }
-          </div>
-      </div>
+        </div>
     );
 }
 
-Header.propTypes = {
-  categories: PropTypes.arrayOf(PropTypes.string).isRequired,
-  basicsLogo: PropTypes.string,
-
-}
-
-export default Header
+export default Menu
