@@ -2,6 +2,11 @@ import React from 'react';
 import { basicsPropType } from '../common/PropTypes'
 import { useTranslation } from 'react-i18next';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+
 const Home = ({ basics, color }) => {
   const { t } = useTranslation();
   const {
@@ -17,15 +22,44 @@ const Home = ({ basics, color }) => {
 
 
   return (
-    <div className="profile">
-      <div s={12} m={6} l={6}>
-        <div className="valign-wrapper">
-          <img src={picture}
-            alt="avatar"
-            className="circle responsive-img"
-            style={{border: "0.5em solid " + color.hex}}
-          />
-          <div className="social">
+    <Container fluid>
+      <Row>
+        <Col>
+          <Image src={picture} roundedCircle width="300" height="300" />
+        </Col>
+        <Col>
+          <h4>{name}</h4>
+          <h6>{t(label)}</h6>
+          <p>{t(summary)}</p>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col></Col>
+        <Col>
+          <div>
+            {phone &&
+              <span className={color.className} >
+                <i className="fas fa-phone" /> {phone}
+              </span>
+            }
+            {website &&
+              <span className={color.className}
+                      waves="light"
+                      node="a"
+                      href={website}>
+                <i className="fas fa-globe" /> {website}
+              </span>}
+            {email &&
+              <span className={color.className}
+                      waves="light"
+                      node="a"
+                      href={`mailto:${email}`}>
+                <i className="far fa-envelope" /> {email}
+              </span>}
+          </div>
+
+          <div>
             {profiles.map(profile => (
               <a key={"social-" + profile.network}
                 href={profile.url} target="_blank"
@@ -35,40 +69,10 @@ const Home = ({ basics, color }) => {
               </a>
             ))}
           </div>
-        </div>
-      </div>
-      <div s={12} m={6} l={6}>
-      <div className="valign-wrapper">
-        <h4 className="name">
-          {name}
-        </h4>
-        <h3 className="light-color label">{t(label)}</h3>
-        <p className="summary">{t(summary)}</p>
-
-        <div className="contact-info">
-          {phone &&
-            <button className={color.className} >
-              <i className="fas fa-phone" /> {phone}
-            </button>
-          }
-          {website &&
-            <button className={color.className}
-                    waves="light"
-                    node="a"
-                    href={website}>
-              <i className="fas fa-globe" /> {website}
-            </button>}
-          {email &&
-            <button className={color.className}
-                    waves="light"
-                    node="a"
-                    href={`mailto:${email}`}>
-              <i className="far fa-envelope" /> {email}
-            </button>}
-        </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+      <hr/>
+    </Container>
   );
 };
 

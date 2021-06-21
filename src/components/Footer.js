@@ -1,26 +1,61 @@
 import React from 'react'
-import { Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import { saveAs } from 'file-saver';
 
-const Footer = ({color}) => (
-    <div className={color.className}>
-      <ul className="footer-links">
-        <li>
-          <Trans>powered_by</Trans>
-          <a href="https://reactjs.org/">ReactJS</a>
-          &nbsp; <i className="fab fa-react"></i>
-        </li>
-        <li>
-          <Trans>inspired_by</Trans>
-          <a href="https://github.com/deltaskelta/react-awesome-resume">« React Awesome Resume »</a>
-          &nbsp; <i className="fab fa-github"></i>
-        </li>
-        <li>
-          <Trans>based_on</Trans>
-          <a href="https://jsonresume.org/">JSON Resume</a>
-          &nbsp; <i className="fas fa-code"></i>
-        </li>
-      </ul>
-    </div>
-)
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+var _ = require('lodash');
+
+
+function recursiveMap (value, fn) {
+    if (_.isArray(value)) {
+      return value.map(v => recursiveMap(v, fn));
+    } else if (typeof value === 'object') {
+        return _.mapValues(value, function(v) {
+            return recursiveMap(v, fn);
+        });
+    } else {
+        return fn(value);
+    }
+};
+
+
+const Footer = ({person}) => {
+  const { t, i18n } = useTranslation();
+
+  function DownloadJson () {
+    const translated = recursiveMap(_.cloneDeep(person), (v) => i18n.exists(v) ? t(v) : v)
+    const json = JSON.stringify(translated, null, '\t')
+    var blob = new Blob([json], {type: "data:text/json;charset=utf-8"});
+    saveAs(blob, "resume.json");
+  }
+
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <div>TODO : get PDF</div>
+          <button onClick={DownloadJson}>
+            Download Json
+          </button>
+        </Col>
+        <Col>
+          <div>
+            {t('powered_by')}
+            <a href="https://reactjs.org/">ReactJS</a>
+            &nbsp; <i className="fab fa-react"></i>
+          </div>
+          <div>
+            {t('based_on')}
+            <a href="https://jsonresume.org/">JSON Resume</a>
+            &nbsp; <i className="fas fa-code"></i>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
 
 export default Footer

@@ -15,11 +15,13 @@ const App = ({ locale, changeLocale, store }) => {
       <Suspense fallback={<h1>Loading ...</h1>}>
         <HeaderContainer changeLanguage={null} />
         <section id="basics"> <HomeContainer /></section>
-        <section id="skills"> <SkillsContainer /></section>
-        <section id="work"> <WorkContainer /></section>
-        <section id="education"> <EducationContainer /></section>
-        <section id="interests"> <InterestsContainer /></section>
-        <section id="languages"> <LanguagesContainer /></section>
+
+        {/* <section id="skills"> <SkillsContainer /></section> */}
+        {/* <section id="work"> <WorkContainer /></section> */}
+        {/* <section id="education"> <EducationContainer /></section> */}
+        {/* <section id="interests"> <InterestsContainer /></section> */}
+        {/* <section id="languages"> <LanguagesContainer /></section> */}
+
         <FooterContainer locale={locale} />
       </Suspense>
     );
