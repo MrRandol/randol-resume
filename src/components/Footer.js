@@ -6,27 +6,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-var _ = require('lodash');
+import { recursiveMap } from '../common/recursiveMap'
 
-
-function recursiveMap (value, fn) {
-    if (_.isArray(value)) {
-      return value.map(v => recursiveMap(v, fn));
-    } else if (typeof value === 'object') {
-        return _.mapValues(value, function(v) {
-            return recursiveMap(v, fn);
-        });
-    } else {
-        return fn(value);
-    }
-};
-
-
-const Footer = ({person}) => {
+const Footer = ({person, refToRender}) => {
   const { t, i18n } = useTranslation();
 
-  function DownloadJson () {
-    const translated = recursiveMap(_.cloneDeep(person), (v) => i18n.exists(v) ? t(v) : v)
+  function downloadJson () {
+    const translated = recursiveMap(person, (v) => i18n.exists(v) ? t(v) : v)
     const json = JSON.stringify(translated, null, '\t')
     var blob = new Blob([json], {type: "data:text/json;charset=utf-8"});
     saveAs(blob, "resume.json");
@@ -36,10 +22,8 @@ const Footer = ({person}) => {
     <Container>
       <Row>
         <Col>
-          <div>TODO : get PDF</div>
-          <button onClick={DownloadJson}>
-            Download Json
-          </button>
+          <button onClick={window.print}>Pdf / Print</button>
+          <button onClick={downloadJson}>Download Json</button>
         </Col>
         <Col>
           <div>

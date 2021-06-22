@@ -7,7 +7,7 @@ import AppContainer from '../containers/AppContainer'
 const Root = ({ store }) => (
   <Provider store={store}>
     <Suspense fallback={null}>
-      <AppContainer />
+      <AppContainer/>
     </Suspense>
   </Provider>
 )
