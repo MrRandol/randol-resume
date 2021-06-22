@@ -1,5 +1,4 @@
 import React from 'react'
-import { skillsPropType } from '../common/PropTypes'
 import { Trans } from 'react-i18next'
 import { Circle } from 'rc-progress'
 import * as categoriesStyle from '../common/categoriesColors'
@@ -62,12 +61,5 @@ const Skills = ({ skills }) => {
   );
 };
 
-Skills.defaultProps = {
-  skills: [],
-};
-
-Skills.propTypes = {
-  skills: skillsPropType
-}
 
 export default Skills;

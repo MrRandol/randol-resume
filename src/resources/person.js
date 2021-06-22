@@ -1,8 +1,10 @@
+import profilePic from './img/profile.jpg';
+
 export const person = {
   basics: {
     name: 'Maxime Choffat',
-    label: 'software_engineer',
-    picture: process.env.PUBLIC_URL + '/img/profile.jpg',
+    label: 'online_sysops',
+    picture: profilePic,
     email: 'maxime.choffat@gmail.com',
     phone: '+33 6 33 56 36 25',
     summary: 'my_summary',

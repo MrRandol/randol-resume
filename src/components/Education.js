@@ -1,5 +1,4 @@
 import React from 'react'
-import { educationPropType } from '../common/PropTypes'
 import { Trans } from 'react-i18next';
 import CustomCard from './Utils'
 const uuidv4 = require('uuid/v4');
@@ -26,9 +25,5 @@ const Education = ({education, color}) => (
     ))}
   </div>
 )
-
-Education.propTypes = {
-  education: educationPropType
-}
 
 export default Education

@@ -22,6 +22,7 @@ const Footer = ({person, refToRender}) => {
     <Container>
       <Row>
         <Col>
+          // TODO : extract to actions and utils, then put dl buttons in menus and on top too
           <button onClick={window.print}>Pdf / Print</button>
           <button onClick={downloadJson}>Download Json</button>
         </Col>

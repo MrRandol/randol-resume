@@ -1,5 +1,4 @@
 import React from 'react'
-import { workPropType } from '../common/PropTypes'
 import { Trans } from 'react-i18next';
 import CustomCard from './Utils'
 const uuidv4 = require('uuid/v4');
@@ -28,8 +27,5 @@ const Work = ({color, work}) => (
   </div>
 )
 
-Work.propTypes = {
-  work: workPropType
-}
 
 export default Work

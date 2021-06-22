@@ -1,5 +1,6 @@
 {
   "basics": "Profil",
+  "contact": "Contact",
   "work": "Expérience",
   "education": "Formation",
   "interests": "Centres d'interêt",
@@ -35,7 +36,7 @@
   "project_manager": "Chef de projet",
   "release_engineer": "Ingénieur build & release",
   "web_developper": "Développeur web",
-  "online_sysops": "Spécialiste système et opérations online",
+  "online_sysops": "Spécialiste Système et Opération en ligne",
 
   "french": "Français",
   "english": "Anglais",

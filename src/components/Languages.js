@@ -1,5 +1,4 @@
 import React from 'react'
-import { languagesPropType } from '../common/PropTypes'
 import { Trans } from 'react-i18next';
 import CustomCard from './Utils'
 const uuidv4 = require('uuid/v4');
@@ -21,9 +20,5 @@ const Languages = ({languages, color}) => (
     ))}
   </div>
 )
-
-Languages.propTypes = {
-  languages: languagesPropType
-}
 
 export default Languages

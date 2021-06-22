@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 
 import AppContainer from '../containers/AppContainer'
@@ -11,9 +10,5 @@ const Root = ({ store }) => (
     </Suspense>
   </Provider>
 )
-
-Root.propTypes = {
-  store: PropTypes.object.isRequired
-}
 
 export default Root

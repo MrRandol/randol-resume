@@ -1,1 +1,47 @@
 @import "custom";
+/**********************
+  COMMON
+**********************/
+
+body {
+  font-family: 'SF Mono', 'Courier', 'Consolas', sans-serif;
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: $text-color;
+  white-space: pre-line;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(../resources/img/still.png);
+}
+
+/**********************
+  HOME
+**********************/
+
+h1.intro-title {
+  color: $secondary;
+  border-bottom: .1em solid $primary;
+}
+
+// .profile-pic-wrapper2 {
+//   background: $tertiary;
+//   padding: .5em;
+// }
+
+.profile-pic-wrapper {
+  background: $primary;
+  padding: .5em;
+}
+
+.profile-pic {
+  background: $secondary;
+  padding: .5em;
+}
+
+
+.masked-pixel-circle {
+  mask-image: url(../resources/svg/circle-fill.svg), none;
+  mask-size: contain;
+}
