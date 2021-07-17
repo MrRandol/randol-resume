@@ -17,12 +17,12 @@ const App = ({ locale, changeLocale, store }) => {
     return (
       // TODO translate
       <Suspense fallback={<Container fluid classname="center"><Spinner animation="border" />Fetching data ...</Container>}>
-        <Container className="bg-main-bg">
+        <Container>
           <HeaderContainer changeLanguage={null} />
           <section id="basics"> <ProfileContainer /></section>
+          <section id="work"> <WorkContainer /></section>
 
           {/* <section id="skills"> <SkillsContainer /></section> */}
-          {/* <section id="work"> <WorkContainer /></section> */}
           {/* <section id="education"> <EducationContainer /></section> */}
           {/* <section id="interests"> <InterestsContainer /></section> */}
           {/* <section id="languages"> <LanguagesContainer /></section> */}

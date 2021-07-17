@@ -1,8 +1,9 @@
 import React from 'react'
-
 import { useTranslation } from 'react-i18next';
-const uuidv4 = require('uuid/v4');
+import moment from 'moment';  
+import 'moment/locale/fr';  
 
+const uuidv4 = require('uuid/v4');
 
 const Menu = ({color, categories, basicsLogo}) => {
 
@@ -11,6 +12,7 @@ const Menu = ({color, categories, basicsLogo}) => {
   // TODO : put in container
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    moment.locale(lng);
   };
 
   return (

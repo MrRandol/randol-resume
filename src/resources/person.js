@@ -2,7 +2,7 @@ import profilePic from './img/profile.jpg';
 
 export const person = {
   basics: {
-    name: 'Maxime Choffat',
+    name: 'Maxime CHOFFAT',
     label: 'online_sysops',
     picture: profilePic,
     email: 'maxime.choffat@gmail.com',
@@ -75,10 +75,10 @@ export const person = {
   work: [
     {
       company: 'Ubisoft Montréal',
-      logo: 'img:https://static-wordpress.akamaized.net/montreal.ubisoft.com/wp-content/uploads/2018/10/03173820/Logo_Ubi_Stacked_HOR_Montreal_WHITE.png',
+      logo: 'https://static-wordpress.akamaized.net/montreal.ubisoft.com/wp-content/uploads/2018/10/03173820/Logo_Ubi_Stacked_HOR_Montreal_WHITE.png',
       position: 'online_sysops',
       website: 'https://montreal.ubisoft.com/',
-      startDate: '2019-06',
+      startDate: '2019-06-01',
       endDate: 'Today',
       summary: "ubisoft_summary",
       highlights: [
@@ -100,11 +100,11 @@ export const person = {
     },
     {
       company: 'SII Canada',
-      logo: 'img:https://www.siicanada.com/public/header/logo.png',
+      logo: 'https://www.siicanada.com/public/header/logo.png',
       position: 'devops_cata_inte',
       website: 'https://www.siicanada.com/',
-      startDate: '2019-01',
-      endDate: '2019-06',
+      startDate: '2019-01-01',
+      endDate: '2019-06-01',
       summary: "sii_summary",
       highlights: [
         'Jenkins',
@@ -127,11 +127,11 @@ export const person = {
     },
     {
       company: 'Nalys',
-      logo: 'img:https://www.nalys-group.com/theme/default-2017/img/logo.png',
+      logo: 'https://www.nalys-group.com/theme/default-2017/img/logo.png',
       position: 'internal_cluster_build',
       website: 'https://www.nalys-group.com/en/home',
-      startDate: '2018-06',
-      endDate: '2018-08',
+      startDate: '2018-06-01',
+      endDate: '2018-08-01',
       summary: 'nalys_internal_summary',
       highlights: [
         'Jenkins',
@@ -149,10 +149,10 @@ export const person = {
     },
     {
       company: 'Nalys',
-      logo: 'img:https://www.nalys-group.com/theme/default-2017/img/logo.png',
+      logo: 'https://www.nalys-group.com/theme/default-2017/img/logo.png',
       position: 'Nalys Graduate Program',
       website: 'https://www.nalys-group.com/en/home',
-      startDate: '2018-09',
+      startDate: '2018-09-01',
       summary: 'nalys_graduate_program_summary',
       highlights: [
         'Agile',
@@ -162,11 +162,11 @@ export const person = {
     },
     {
       company: 'ING (Nalys)',
-      logo: 'img:https://www.nalys-group.com/theme/default-2017/img/logo.png',
+      logo: 'https://www.nalys-group.com/theme/default-2017/img/logo.png',
       position: 'release_engineer',
       website: 'http://piedpiper.com',
-      startDate: '2017-06',
-      endDate: '2018-06',
+      startDate: '2017-06-01',
+      endDate: '2018-06-01',
       summary: 'nalys_ing_summary',
       highlights: [
         'Jenkins',
@@ -185,11 +185,11 @@ export const person = {
     },
     {
       company: 'GIM (Nalys)',
-      logo: 'img:https://www.nalys-group.com/theme/default-2017/img/logo.png',
+      logo: 'https://www.nalys-group.com/theme/default-2017/img/logo.png',
       position: 'developer_devops_coach',
       website: 'https://www.gim.be/en',
-      startDate: '2017-02',
-      endDate: '2017-05',
+      startDate: '2017-02-01',
+      endDate: '2017-05-01',
       summary: 'nalys_gim_summary',
       highlights: [
         'JavaScript',
@@ -212,11 +212,11 @@ export const person = {
     },
     {
       company: 'Worldline',
-      logo: 'img:https://worldline.com/content/dam/gotomarket/logo/logo-worldline.png',
+      logo: 'https://worldline.com/content/dam/gotomarket/logo/logo-worldline.png',
       position: 'project_manager',
       website: 'https://worldline.com/',
-      startDate: '2016-12',
-      endDate: '2015-07',
+      startDate: '2016-12-01',
+      endDate: '2015-07-01',
       summary: 'worldline_project_manager_summary',
       highlights: [
         "Agile",
@@ -228,11 +228,11 @@ export const person = {
     },
     {
       company: 'Worldline',
-      logo: 'img:https://worldline.com/content/dam/gotomarket/logo/logo-worldline.png',
+      logo: 'https://worldline.com/content/dam/gotomarket/logo/logo-worldline.png',
       position: 'application_manager',
       website: 'https://worldline.com/',
-      startDate: '2012-09',
-      endDate: '2015-06',
+      startDate: '2012-09-01',
+      endDate: '2015-06-01',
       summary: 'worldline_application_manager_summary',
       highlights: [
         "Flex",
@@ -267,11 +267,11 @@ export const person = {
     },
     {
       company: 'Worldline',
-      logo: 'img:https://worldline.com/content/dam/gotomarket/logo/logo-worldline.png',
+      logo: 'https://worldline.com/content/dam/gotomarket/logo/logo-worldline.png',
       position: 'flex_developer',
       website: 'https://worldline.com/',
-      startDate: '2012-02',
-      endDate: '2012-08',
+      startDate: '2012-02-01',
+      endDate: '2012-08-01',
       summary: 'worldline_flex_summary',
       highlights: [
         "Flex",
@@ -291,11 +291,11 @@ export const person = {
     },
     {
       company: 'Captive Studio',
-      logo: 'img:https://pbs.twimg.com/profile_images/1112815436909985793/_1klXiWS_400x400.png',
+      logo: 'https://pbs.twimg.com/profile_images/1112815436909985793/_1klXiWS_400x400.png',
       position: 'web_developer',
       website: 'https://www.captive.fr/',
-      startDate: '2010-08',
-      endDate: '2011-02',
+      startDate: '2010-08-01',
+      endDate: '2011-02-01',
       summary: 'captive_studio_summary',
       highlights: [
         "Ruby On Rails",
@@ -308,12 +308,12 @@ export const person = {
   education: [
     {
       institution: 'UTBM (Université de Technologie de Belfort Montbéliard), France',
-      logo: 'img:https://pbs.twimg.com/profile_images/673805187400749056/18OZaqMO_400x400.png',
+      logo: 'https://pbs.twimg.com/profile_images/673805187400749056/18OZaqMO_400x400.png',
       website: 'https://www.utbm.fr/',
       area: 'utbm_area',
       studyType: 'utbm_studytype',
-      startDate: '2007-09',
-      endDate: '2012-06',
+      startDate: '2007-09-01',
+      endDate: '2012-06-01',
       gpa: '0.0',
       courses: [
         'education_english_course'
@@ -323,8 +323,8 @@ export const person = {
       institution: 'Lycée Saint André - Colmar, France',
       area: 'st_andre_area',
       studyType: 'st_andre_studytype',
-      startDate: '2003-08',
-      endDate: '2004-05',
+      startDate: '2003-08-01',
+      endDate: '2004-05-01',
       gpa: '0.0',
       courses: [
         'education_spe_math'
